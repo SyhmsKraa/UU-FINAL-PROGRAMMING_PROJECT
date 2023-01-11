@@ -1,1 +1,2 @@
-# Bilgisayar-programlama-final-at-
+# Bilgisayar-programlama-final-atışlar
+import math
