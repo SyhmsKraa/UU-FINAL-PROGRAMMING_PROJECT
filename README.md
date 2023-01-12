@@ -6,3 +6,6 @@ import matplotlib.animation as animation
 angle = float(input("Atış açısı (derece cinsinden): "))
 velocity = float(input("Başlangıç hızı (m/s): "))
 h = float(input("Atış yapılacak yükseklik (m): "))
+
+#Fiziksel parametreler
+g = 9.81 # yerçekimi ivmesi (m/s^2)
