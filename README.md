@@ -9,3 +9,7 @@ h = float(input("Atış yapılacak yükseklik (m): "))
 
 #Fiziksel parametreler
 g = 9.81 # yerçekimi ivmesi (m/s^2)
+
+# Koordinat sistemini oluşturun
+x_range = [0, 0]
+y_range = [h, 0]
