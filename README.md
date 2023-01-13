@@ -26,3 +26,6 @@ for t in range(0, int(t_flight*100)):
     y = h + velocity * math.sin(math.radians(angle)) * t / 100 - 0.5 * g * t**2 / 10000
     x_coords.append(x)
     y_coords.append(y)
+
+# Maksimum ulaşılabilecek yükseklik değerini hesaplayın
+max_height = h + velocity**2 * math.sin(math.radians(angle))**2 / (2*g)
