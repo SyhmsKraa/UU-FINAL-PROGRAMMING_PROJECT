@@ -29,3 +29,7 @@ for t in range(0, int(t_flight*100)):
 
 # Maksimum ulaşılabilecek yükseklik değerini hesaplayın
 max_height = h + velocity**2 * math.sin(math.radians(angle))**2 / (2*g)
+
+# Animasyonu oluşturun
+fig, ax = plt.subplots()
+line, = ax.plot(x_coords, y_coords, "bo-")
