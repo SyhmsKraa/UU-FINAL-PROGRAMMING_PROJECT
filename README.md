@@ -20,3 +20,9 @@ t_flight = 2 * velocity * math.sin(math.radians(angle)) / g
 # Atış sırasında, her bir zaman adımı için nokta koordinatlarını hesaplayın
 x_coords = []
 y_coords = []
+
+for t in range(0, int(t_flight*100)):
+    x = velocity * math.cos(math.radians(angle)) * t / 100
+    y = h + velocity * math.sin(math.radians(angle)) * t / 100 - 0.5 * g * t**2 / 10000
+    x_coords.append(x)
+    y_coords.append(y)
