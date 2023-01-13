@@ -16,3 +16,7 @@ y_range = [h, 0]
 
 # Atışın yapılacağı yerden başlayarak, atışın yapılacağı yere kadar olan süreyi bulun
 t_flight = 2 * velocity * math.sin(math.radians(angle)) / g
+
+# Atış sırasında, her bir zaman adımı için nokta koordinatlarını hesaplayın
+x_coords = []
+y_coords = []
