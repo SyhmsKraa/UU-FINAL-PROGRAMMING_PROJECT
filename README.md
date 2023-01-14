@@ -39,3 +39,11 @@ def flight_duration(angle, velocity, h):
     g = 9.81  # yerçekimi ivmesi (m/s^2)
     t_flight = 2 * velocity * math.sin(math.radians(angle)) / g  # atış süresi
     return t_flight
+
+    def update_flight(x, y, vx, vy, wind_speed, wind_direction):
+# Rüzgarın etkisini hesaba katarak, atışın yönünü ve hızını güncelleyin
+    vx -= wind_speed * math.cos(math.radians(wind_direction))
+    vy -= wind_speed * math.sin(math.radians(wind_direction))
+    x += vx
+    y += vy
+    return x, y, vx, vy
