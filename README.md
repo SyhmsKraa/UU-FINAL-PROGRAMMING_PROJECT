@@ -33,3 +33,9 @@ max_height = h + velocity**2 * math.sin(math.radians(angle))**2 / (2*g)
 # Animasyonu oluşturun
 fig, ax = plt.subplots()
 line, = ax.plot(x_coords, y_coords, "bo-")
+
+# Atışın havada kalma süresini hesaplayan fonksiyon
+def flight_duration(angle, velocity, h):
+    g = 9.81  # yerçekimi ivmesi (m/s^2)
+    t_flight = 2 * velocity * math.sin(math.radians(angle)) / g  # atış süresi
+    return t_flight
