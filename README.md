@@ -47,3 +47,6 @@ def flight_duration(angle, velocity, h):
     x += vx
     y += vy
     return x, y, vx, vy
+
+def animate(i):
+    line.set_data(x_coords[:i+1], y_coords[:i+1])
