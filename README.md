@@ -50,3 +50,8 @@ def flight_duration(angle, velocity, h):
 
 def animate(i):
     line.set_data(x_coords[:i+1], y_coords[:i+1])
+    ax.set_xlim(x_range)
+    ax.set_ylim(y_range)
+    return line,
+
+ani = animation.FuncAnimation(fig, animate, frames=len(x_coords), interval=20, repeat=True)
