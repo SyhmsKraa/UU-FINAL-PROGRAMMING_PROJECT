@@ -55,3 +55,11 @@ def animate(i):
     return line,
 
 ani = animation.FuncAnimation(fig, animate, frames=len(x_coords), interval=20, repeat=True)
+
+# Maksimum ulaşılabilecek yükseklik değerini gösterin
+print("Maksimum ulaşılabilecek yükseklik:", max_height, "m")
+
+duration = flight_duration(angle, velocity, h)
+print("Havada kalma süresi:", duration, "saniye")
+
+plt.show()
