@@ -11,8 +11,8 @@ h = float(input("Atış yapılacak yükseklik (m): "))
 g = 9.81 # yerçekimi ivmesi (m/s^2)
 
 # Koordinat sistemini oluşturun
-x_range = [0, 0]
-y_range = [h, 0]
+x_range = [0, 300]
+y_range = [0, 300]
 
 # Atışın yapılacağı yerden başlayarak, atışın yapılacağı yere kadar olan süreyi bulun
 t_flight = 2 * velocity * math.sin(math.radians(angle)) / g
