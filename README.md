@@ -48,13 +48,7 @@ def flight_duration(angle, velocity, h):
     y += vy
     return x, y, vx, vy
 
-def animate(i):
-    line.set_data(x_coords[:i+1], y_coords[:i+1])
-    ax.set_xlim(x_range)
-    ax.set_ylim(y_range)
-    return line,
 
-ani = animation.FuncAnimation(fig, animate, frames=len(x_coords), interval=20, repeat=True)
 
 # Maksimum ulaşılabilecek yükseklik değerini gösterin
 print("Maksimum ulaşılabilecek yükseklik:", max_height, "m")
@@ -62,4 +56,5 @@ print("Maksimum ulaşılabilecek yükseklik:", max_height, "m")
 duration = flight_duration(angle, velocity, h)
 print("Havada kalma süresi:", duration, "saniye")
 
+plt.plot(x,y)
 plt.show()
